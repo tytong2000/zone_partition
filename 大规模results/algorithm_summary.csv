@@ -1,0 +1,15 @@
+﻿,,objective,objective,distance,distance,time,num_routes
+,,mean,std,mean,std,mean,mean
+experiment_type,algorithm,,,,,,
+adaptive,CW_TS_ADP_first_stage,7.89,5.76,0.62,0.39,0.13,7.03
+adaptive,SA_VNS_ADP_first_stage,7.89,5.76,0.62,0.39,0.13,7.03
+adaptive,TS_ADP_tabu_size,34.35,26.65,0.98,0.7,0.56,33.14
+adaptive,VNS_ADP_neighborhood_change,7.89,5.76,0.62,0.39,0.46,7.03
+baseline,CW,2.32,0.25,0.32,0.19,0.01,1.01
+baseline,SA,2.33,1.23,0.58,0.37,0.0,1.32
+baseline,TS,34.67,26.61,0.99,0.7,0.57,33.46
+baseline,VNS,7.78,5.74,0.51,0.36,0.05,7.03
+hybrid,CW_TS,34.67,26.61,0.99,0.7,0.57,33.46
+hybrid,CW_VNS,7.78,5.74,0.51,0.36,0.05,7.03
+hybrid,SA_TS,34.67,26.61,0.99,0.7,0.57,33.46
+hybrid,SA_VNS,7.78,5.74,0.51,0.36,0.06,7.03
