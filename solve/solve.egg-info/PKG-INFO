@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: solve
+Version: 0.1
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: networkx
+Requires-Dist: gurobipy

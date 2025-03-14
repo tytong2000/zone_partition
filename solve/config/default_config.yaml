@@ -1,0 +1,50 @@
+# default_config.yaml
+
+experiment:
+  name: "Default VRP Experiment"
+  output_dir: "results/default_experiment"
+  random_seed: 42
+
+data:
+  excel_path: "data/orders.xlsx"
+  city_path: "data/wuhan_city.geojson"
+  road_path: "data/best_aligned_road_network.geojson"
+
+solver:
+  # Clarke-Wright
+  cw_max_iter: 100
+  cw_time_window_enforce: false
+
+  # Simulated Annealing
+  sa_initial_temp: 1000.0
+  sa_cooling_rate: 0.95
+  sa_max_iter: 100
+
+  # Tabu Search
+  ts_tabu_size: 10
+  ts_max_iter: 50
+  ts_neighborhood_size: 20
+
+  # VNS
+  vns_max_iter: 30
+  vns_max_neighborhoods: 3
+  vns_shake_intensity: 0.3
+
+  # Adaptive
+  adaptive_frequency: 5
+  adaptive_min_param: 5
+  adaptive_max_param: 20
+
+facility_location:
+  use_multilevel_capacity: false
+  fixed_cost: 1000.0
+  operation_cost: 2.0
+  coverage_radius: 50.0
+  coverage_penalty_factor: 1.5
+  use_partial_coverage: false
+  multi_levels: []
+
+# 其它可能的全局或基础配置，如并行线程数等
+parallel:
+  max_workers: 8
+ 

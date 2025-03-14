@@ -1,0 +1,18 @@
+# gurobi_config.yaml
+
+solver:
+  # 覆盖或补充默认配置
+  use_gurobi: true
+  gurobi_time_limit: 600  # 10分钟
+  gurobi_threads: 4
+
+  # 同时保留其它算法参数
+  # ts_tabu_size: 15
+
+facility_location:
+  use_multilevel_capacity: true
+  multi_levels:
+    - [5000, 800]       # capacity=5000, cost=800
+    - [8000, 1000]
+    - [12000, 1400]
+ 
